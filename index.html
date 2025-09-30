@@ -1,87 +1,176 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
- <title>A-Plus Motors</title>
+  <meta charset="utf-8">
+n  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BMW — MainLX</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;color:#111}
+    header{background:#000;color:#fff;padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
+    header h1{margin:0;font-size:20px}
+    nav a{color:#fff;margin-left:12px;text-decoration:none;font-weight:600}
+    .hero{display:block;padding:48px 24px;text-align:center;
+          background-image:url('https://via.placeholder.com/1400x420?text=BMW+MainLX+Hero');
+          background-size:cover;background-position:center;color:#fff}
+    .container{max-width:1100px;margin:28px auto;padding:0 18px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{border:1px solid #eee;border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    .card img{width:100%;height:220px;object-fit:cover;display:block}
+    .card .body{padding:12px}
+    .video-wrap{display:grid;grid-template-columns:1fr;gap:18px}
+    .big-video{height:420px;width:100%}
+    footer{text-align:center;padding:18px;color:#666;font-size:14px}
+    .lightbox{position:fixed;inset:0;display:none;align-items:center;
+              justify-content:center;background:rgba(0,0,0,0.85)}
+    .lightbox img{max-width:94%;max-height:86%;border-radius:6px}
+    .close-btn{position:absolute;top:18px;right:18px;color:#fff;font-size:22px;cursor:pointer}
+  </style>
 </head>
-   <link rel="stylesheet" href="external.css">
- <body>
+<body>
   <header>
-   <h1 align="center"><hr>A-Plus Motors<hr></h1>
-     <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#Our Cars">Our Cars</a></li>
-                <li><a href="About">About</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
-   </header>
-    <p><i>>Welcome to A-Plus Motors</p>
-    <p>>We sell cars from all around the world. A-Plus Motors is a dynamic auto-motive company known for offering a wide range of high quality vehicles, from sleek sedans to powerful SUVs and luxury cars.
-    <p>The cars we sell consist of;</p>
-    <p> 1. German cars</p>
-        2. American cars</p>
-        3. Italian cars</p>
-        4. Japanese cars</p>
-<hr>
-   <h1 align="center"><u>Our Cars</u></h1>
-    <h2> 1. German Collection</h2>
-      <table border="1" width="900" height="400">
-    <tr>
-        <th align="centre"><img src="audi r8.jpeg" width="500" height="400"></th>
-        <th align="center"><img src="bmw m5.jpeg" width="500" height="400"></th>
-        <th align="center"><img src="mercedes amg.jpeg" width="600" height="400"></th>
-    </tr>
-    <tr>
-        <td align="center">Audi R8</td>
-        <td align="center">BMW M5</td>
-        <td align="center">Mercedes-Benze GT amg</td>
-    </tr>
-</table>
-    <h2> 2. American Collection</h2>
-      <table border="1" width="900" height="400">
-    <tr>
-        <th align="center"><img src="ford 5l.jpeg" width="500" height="400"></th>
-        <th align="center"><img src="chevrolet.jpeg" width="600" height="400"></th>
-    </tr>
-    <tr>
-        <td align="center">Ford 5L</td>
-        <td align="center">Chevrolet</td>
-    </tr>
-</table>
-    <h2> 3. Italian Collection</h2>
-      <table border="1" width="900" height="400">
-    <tr>
-        <th align="center"><img src="lamborghini urus.jpeg" width="600" height="400"></th>
-        <th align="center"><img src="ferrari f8.jpeg" width="500" height="400"></th>
-        <th align="center"><img src="alfa.jpeg" width="500" height="400"></th>
-    </tr>
-    <tr>
-        <td align="center">Lamborghini urus</td>
-        <td align="center">Ferrari F8</td>
-        <td align="center">Alfa romeo</td>
-    </tr>
-</table>
-    <h2> 4.Japanese Collection</h2>
-       <table border="1" width="900" height="400">
-    <tr>
-        <th align="center"><img src="sentra.jpeg" width="600" height="400"></th>
-        <th align="center"><img src="camry.jpeg" width="500" height="400"></th>
-    </tr>
-    <tr>
-        <td align="center">Toyota Sentra</td>
-        <td align="center">Toyota camry</td>
-    </tr>
-</table>
-<video width="320" height="240" controls>
-  <source src="BMW m5">
-</video>   
-  </i>
-  <section id="Contact">
-    <h3> Contact Us</h3>
-    <p>📞 Phone: +254 713 568 347</p>
-    <p>📍 Location: Nairobi, Kenya</p>
-    <p>📧 Email: info@jamiiflavors.com</p>
-   </section>
+    <h1>BMW — MainLX</h1>
+    <nav>
+      <a href="#models">Models</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#videos">Videos</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
 
- </body>
+  <section class="hero" role="img" aria-label="BMW hero image">
+    <div style="max-width:900px;margin:0 auto;background:rgba(0,0,0,0.35);padding:28px;border-radius:10px">
+      <h2 style="margin:0 0 8px;font-size:34px">Welcome to BMW — MainLX</h2>
+      <p style="margin:0;font-size:16px;opacity:0.95">A site dedicated to BMW — models, galleries, and videos.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="models">
+      <h3>Featured Models</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/BMW_M3_F80_IMG_0275.jpg" alt="BMW M3">
+          <div class="body">
+            <h4>BMW M3</h4>
+            <p>Performance sedan — iconic design and handling.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/BMW_X5_%28G05%29_IMG_0946.jpg" alt="BMW X5">
+          <div class="body">
+            <h4>BMW X5</h4>
+            <p>Luxury SUV with versatile space and performance.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/BMW_iX1_IAA_2023_front.jpg" alt="BMW iX">
+          <div class="body">
+            <h4>BMW iX</h4>
+            <p>Electric SUV — futuristic and sustainable.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" style="margin-top:28px">
+      <h3>Gallery (click images to enlarge)</h3>
+      <div class="grid">
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/BMW_M_Headquarters_Munich_2007.jpg"
+               alt="BMW Headquarters Munich"
+               data-large="https://upload.wikimedia.org/wikipedia/commons/d/d0/BMW_M_Headquarters_Munich_2007.jpg">
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/BMW_Logo_%28roundel%29.png"
+               alt="BMW Logo"
+               data-large="https://upload.wikimedia.org/wikipedia/commons/0/02/BMW_Logo_%28roundel%29.png">
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/BMW_M3_%28F80%29_front.jpg"
+               alt="BMW M3 front"
+               data-large="https://upload.wikimedia.org/wikipedia/commons/3/36/BMW_M3_%28F80%29_front.jpg">
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/BMW_iX3_IMG_005.jpg"
+               alt="BMW iX3"
+               data-large="https://upload.wikimedia.org/wikipedia/commons/5/5c/BMW_iX3_IMG_005.jpg">
+        </div>
+      </div>
+    </section>
+
+    <section id="videos" style="margin-top:28px">
+      <h3>Videos</h3>
+      <div class="video-wrap">
+        <div class="card">
+          <div style="padding:12px">
+            <h4>BMW iX — Official Promo</h4>
+            <p>This is an official BMW video about the iX electric SUV.</p>
+            <div style="position:relative;padding-top:56.25%">
+              <iframe src="https://www.youtube.com/embed/TZuNSNY9TcI"
+                      title="Exploring the first-ever BMW iX"
+                      style="position:absolute;inset:0;width:100%;height:100%;border:0"
+                      allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div style="padding:12px">
+            <h4>BMW i8 Review</h4>
+            <p>A review and walkaround of the BMW i8.</p>
+            <div style="position:relative;padding-top:56.25%">
+              <iframe src="https://www.youtube.com/embed/1JTv5XCi9-Y"
+                      title="BMW i8 Review"
+                      style="position:absolute;inset:0;width:100%;height:100%;border:0"
+                      allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:28px">
+      <h3>About This Demo</h3>
+      <p>This site uses **public domain / Wikimedia / licensed images** of BMW and official YouTube embeds, so everything loads properly. You can swap in your own images or videos if you have them.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> BMW — MainLX demo.  
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
+    <span class="close-btn" id="closeBtn">✕</span>
+    <img id="lightboxImg" src="" alt="Enlarged image">
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeBtn = document.getElementById('closeBtn');
+
+    document.querySelectorAll('[data-large]').forEach(img => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', e => {
+        lightboxImg.src = img.getAttribute('data-large') || img.src;
+        lightbox.style.display = 'flex';
+        lightbox.setAttribute('aria-hidden','false');
+      });
+    });
+
+    closeBtn.addEventListener('click', ()=>{
+      lightbox.style.display='none';
+      lightbox.setAttribute('aria-hidden','true');
+      lightboxImg.src='';
+    });
+    lightbox.addEventListener('click', (e)=>{
+      if(e.target === lightbox) {
+        closeBtn.click();
+      }
+    });
+  </script>
+</body>
 </html>
